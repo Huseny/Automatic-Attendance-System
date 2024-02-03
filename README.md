@@ -107,13 +107,13 @@ ADMIN_PASSWORD=superuser_password
 
 ## Contributing
 
-1. pull from main before starting a new feature.
+1. Pull from main before starting a new feature.
 2. Create a new branch for the feature you are working on.
 3. Checkout to the new branch and start working on the feature.
 4. Make changes to the codebase.
-5. Commit changes using the following naming convention: [TYPE-OF-CHANGE](SCOPE): [SHORT-DESCRIPTION].
+5. Commit changes using the following naming convention: [TYPE-OF-CHANGE] ([SCOPE]): [SHORT-DESCRIPTION].
 6. Push changes.
-7. Create a pull request to merge the new branch into dev branch.
+7. Create a pull request to merge the new branch into main branch.
 
 Use the following template for commit messages:
 
