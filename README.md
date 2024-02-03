@@ -116,7 +116,7 @@ ADMIN_PASSWORD=superuser_password
    pipenv  requirements > requirements.txt
    ``` 
    to update the requirements.txt file.
-5. Commit changes using the following naming convention: [TYPE-OF-CHANGE] ([SCOPE]): [SHORT-DESCRIPTION].
+5. Commit changes using the following naming convention: ```[TYPE-OF-CHANGE] ([SCOPE]): [SHORT-DESCRIPTION]```.
 6. Push changes.
 7. Create a pull request to merge the new branch into main branch.
 
