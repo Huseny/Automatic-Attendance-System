@@ -9,7 +9,7 @@ Automated attendance system backend built with Django.
   - [Installation](#installation)
   - [Setting Up the Database](#setting-up-the-database)
   - [Running the Development Server](#running-the-development-server)
-- [Folder Structure](#folder-structure)
+- [Directory Structure](#directory-structure)
 - [Environment Variables](#environment-variables)
 - [Contributing](#contributing)
 - [License](#license)
@@ -65,7 +65,7 @@ python manage.py runserver
 
 Visit [http://127.0.0.1:8000/](http://127.0.0.1:8000/) in your web browser.
 
-## Folder Structure
+## Directory Structure
 
 Please the following folder structure when adding your contribution:
 
@@ -106,6 +106,14 @@ ADMIN_PASSWORD=superuser_password
 ```
 
 ## Contributing
+
+1. pull from main before starting a new feature.
+2. Create a new branch for the feature you are working on.
+3. Checkout to the new branch and start working on the feature.
+4. Make changes to the codebase.
+5. Commit changes using the following naming convention: [TYPE-OF-CHANGE](SCOPE): [SHORT-DESCRIPTION].
+6. Push changes.
+7. Create a pull request to merge the new branch into dev branch.
 
 Use the following template for commit messages:
 
