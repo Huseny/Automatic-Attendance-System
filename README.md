@@ -11,9 +11,6 @@ Automated attendance system backend built with Django.
   - [Running the Development Server](#running-the-development-server)
 - [Folder Structure](#folder-structure)
 - [Environment Variables](#environment-variables)
-- [API Documentation](#api-documentation)
-- [Scripts](#scripts)
-- [Docker](#docker)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -21,22 +18,21 @@ Automated attendance system backend built with Django.
 
 ### Prerequisites
 
-- Python (version x.x.x)
+- Python (version 3.10)
 - Pipenv
-- SQLite or another database of your choice
 
 ### Installation
 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your_username/attendance-system.git
+   git clone https://github.com/Huseny/Automatic-Attendance-System.git
    ```
 
 2. Change into the project directory:
 
    ```bash
-   cd attendance-system
+   cd Automatic-Attendance-System
    ```
 
 3. Install dependencies using Pipenv:
@@ -50,7 +46,7 @@ Automated attendance system backend built with Django.
 Run the initial migrations to set up the database:
 
 ```bash
-pipenv run python manage.py migrate
+python manage.py migrate
 ```
 
 ### Running the Development Server
@@ -64,66 +60,37 @@ pipenv shell
 Run the development server:
 
 ```bash
-pipenv run python manage.py runserver
+python manage.py runserver
 ```
 
 Visit [http://127.0.0.1:8000/](http://127.0.0.1:8000/) in your web browser.
 
 ## Folder Structure
 
-The project follows a standard Django project structure:
+Please the following folder structure when adding your contribution:
 
 ```
-attendance_system/
-|-- attendance_system/
+Automatic-Attendance-System/
+|-- AI Students Picture/
+|-- attendance/
 |   |-- __init__.py
 |   |-- asgi.py
-|   |-- settings/
-|   |   |-- __init__.py
-|   |   |-- base.py
-|   |   |-- local.py
-|   |   |-- production.py
+|   |-- settings.py
 |   |-- urls.py
 |   |-- wsgi.py
-|-- apps/
-|   |-- accounts/
-|   |   |-- migrations/
-|   |   |-- templates/
+|   |-- detection/
 |   |   |-- __init__.py
-|   |   |-- admin.py
-|   |   |-- apps.py
-|   |   |-- models.py
-|   |   |-- tests.py
-|   |   |-- urls.py
-|   |   `-- views.py
-|   |-- attendance/
-|   |   |-- migrations/
-|   |   |-- templates/
+|   |   |-- ...
+|   |-- recognition/
 |   |   |-- __init__.py
-|   |   |-- admin.py
-|   |   |-- apps.py
-|   |   |-- models.py
-|   |   |-- tests.py
-|   |   |-- urls.py
-|   |   `-- views.py
-|-- static/
-|-- templates/
-|-- media/
+|   |   |-- ...
 |-- db.sqlite3
 |-- manage.py
 |-- Pipfile
 |-- Pipfile.lock
 |-- .gitignore
-|-- .env
 |-- README.md
-|-- requirements.txt
-|-- scripts/
-|   |-- setup_database.sh
-|   |-- run_tests.sh
-|   |-- create_superuser.sh
-|-- Dockerfile
-|-- docker-compose.yml
-|-- .dockerignore
+|-- LICENSE
 ```
 
 ## Environment Variables
@@ -131,38 +98,24 @@ attendance_system/
 The project uses environment variables for configuration. Create a `.env` file in the project root and define the following variables:
 
 ```env
-DEBUG=True
-SECRET_KEY=your_secret_key
-DB_NAME=your_database_name
-DB_USER=your_database_user
-DB_PASSWORD=your_database_password
-DB_HOST=your_database_host
-DB_PORT=your_database_port
+DEBUG=TRUE
+SECRET_KEY=your_django_secret_key
+ALLOWED_HOSTS=allowed_hosts
+ADMIN_USER=superuser_username
+ADMIN_PASSWORD=superuser_password
 ```
-
-## API Documentation
-
-The API documentation is available at [API Documentation](./docs/api.md).
-
-## Scripts
-
-Helpful scripts are available in the `scripts/` directory. Run them using:
-
-```bash
-pipenv run sh scripts/script_name.sh
-```
-
-- `setup_database.sh`: Sets up the database.
-- `run_tests.sh`: Runs tests.
-- `create_superuser.sh`: Creates a superuser.
-
-## Docker
-
-... (Include information on Docker setup and usage if applicable)
 
 ## Contributing
 
-We welcome contributions! Read the [Contributing Guidelines](CONTRIBUTING.md) to get started.
+Use the following template for commit messages:
+
+```
+ - chore(folders): renamed/restructured folders
+ - feat(feature): implement UI for a feature
+ - fix(feature): fix a not working feature
+ - style(feature): refined UI for a feature
+```
+
 
 ## License
 
