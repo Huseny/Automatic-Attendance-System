@@ -111,6 +111,11 @@ ADMIN_PASSWORD=superuser_password
 2. Create a new branch for the feature you are working on.
 3. Checkout to the new branch and start working on the feature.
 4. Make changes to the codebase.
+5. Run 
+   ```bash
+   pipenv  requirements > requirements.txt
+   ``` 
+   to update the requirements.txt file.
 5. Commit changes using the following naming convention: [TYPE-OF-CHANGE] ([SCOPE]): [SHORT-DESCRIPTION].
 6. Push changes.
 7. Create a pull request to merge the new branch into main branch.
