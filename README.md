@@ -1,3 +1,4 @@
+# Please check the "new" branch, all latest changes are there
 # Attendance System
 
 Automated attendance system backend built with Django.
